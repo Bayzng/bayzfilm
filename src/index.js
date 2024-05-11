@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-// import {createTheme, ThemeProvider} from "@mui/material/styles"
 import {Provider} from 'react-redux'
 import store from './App/store'
-
 import ToggleColorModeProvider from './utils/ToggleColorMode'
+import { TmaSDKProvider } from './provider';
 
 // const theme = createTheme({})
 
@@ -16,7 +15,9 @@ import ToggleColorModeProvider from './utils/ToggleColorMode'
   <Provider store={store}>
     <ToggleColorModeProvider>
   <BrowserRouter>
-      <App /> 
+  <TmaSDKProvider>
+    <App />
+    </TmaSDKProvider>
   </BrowserRouter>
   </ToggleColorModeProvider>
   </Provider>, 

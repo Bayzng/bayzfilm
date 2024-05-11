@@ -73,7 +73,7 @@ const Sidebor = ({ setMobileOpen }) => {
         ))}
       </List>
       <Divider />
-      <List>
+      {/* <List>
         <ListSubheader>Genres</ListSubheader>
         {isFetching ? (
           <Box display="flex" justifyContent="center">
@@ -98,7 +98,7 @@ const Sidebor = ({ setMobileOpen }) => {
             </Link>
           ))
         )}
-      </List>
+      </List> */}
     </>
   );
 };
